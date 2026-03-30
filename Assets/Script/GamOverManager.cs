@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:92b5cbc4a3aada305342846add0e36263dd5a51cd006082728aac0c43fb5c6a5
-size 660
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class GameOverManager : MonoBehaviour
+{
+    public void RestartGame()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void MainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void ExitGame()
+    {
+        Debug.Log("EXIT GAME");
+        Application.Quit();
+    }
+}
