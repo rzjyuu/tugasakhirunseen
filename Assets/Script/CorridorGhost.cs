@@ -1,20 +1,3 @@
-using UnityEngine;
-
-public class CorridorGhost : MonoBehaviour
-{
-    public SanityManager sanityManager;
-
-    void Update()
-    {
-        if (sanityManager == null) return;
-
-        if (sanityManager.isCorridor)
-        {
-            sanityManager.SetCorridorGhost(true);
-        }
-        else
-        {
-            sanityManager.SetCorridorGhost(false);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:13d8d0bfd2a887bfc6a2dbd324aea78509ee0691b9d9c97499b82ca7329498f2
+size 572
